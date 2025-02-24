@@ -1,4 +1,4 @@
-package Udemy.CursoJava.Anotações.Exemplos.ExemploProduto;
+package Udemy.CursoJava.Udemy.Exercicios.OrientaçãoObjetos.ExemploProdutoConstrutor;
 
 import java.util.Scanner;
 
@@ -6,17 +6,24 @@ public class ProgramaProduto {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Produto product = new Produto();
 
         System.out.println("Produto Data");
         System.out.print("Nome do Produto: ");
-        product.name = scanner.nextLine();
+        String name = scanner.nextLine();
 
         System.out.print("Preço do produto: ");
-        product.preco = scanner.nextDouble();
+        double preco = scanner.nextDouble();
 
-        System.out.print("Quantidade do produto: ");
-        product.quantidade = scanner.nextInt();
+//      System.out.print("Quantidade do produto: ");
+//      int quantidade = scanner.nextInt();
+
+        // Utilizando O encapsulamento:
+        Produto product = new Produto(name, preco);
+        product.setName("Computador");
+        System.out.println("Novo nome: "+ product.getName());
+
+        product.setPreco(1200.00);
+        System.out.println("Novo preço: "+ product.getPreco());
 
         // o metodo toString converte um objeto para uma string!!
         //System.out.println(product.toString());
