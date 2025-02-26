@@ -12,7 +12,7 @@ public class CalculoPessoa {
 
         Pessoa[] vetorPessoas = new Pessoa[n];
 
-        for(int i = 1; i < vetorPessoas.length; i++){
+        for(int i = 0; i < vetorPessoas.length; i++){
 
             scanner.nextLine();
             System.out.print("Nome: ");
@@ -33,17 +33,19 @@ public class CalculoPessoa {
             soma += vetorPessoas[i].getAltura();
         }
 
-        int menoresDe16 = 0;
+        double media = soma / n;
+
+        int cont = 0;
         for (int i = 0; i < vetorPessoas.length; i++) {
-            if (vetorPessoas[i].getIdade() <= 16){
-                menoresDe16++;
+            if (vetorPessoas[i].getIdade() < 16){
+                cont = cont + 1;
             }
 
         }
 
-        double porcentagem = ((double) menoresDe16 / n) * 100;
+        double porcentagem = cont * 100.0 / n;
 
-        System.out.printf("ALTURA MEDIA: %.2f%n", soma);
+        System.out.printf("ALTURA MEDIA: %.2f%n", media);
         System.out.printf("PESSOAS COM MENOS DE 16 ANOS: %.2f%n", porcentagem ,"%");
 
         scanner.close();
