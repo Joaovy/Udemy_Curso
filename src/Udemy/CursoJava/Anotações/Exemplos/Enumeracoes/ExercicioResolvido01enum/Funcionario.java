@@ -78,7 +78,6 @@ public class Funcionario {
                 soma += c.totalValor();
             }
 
-
         }
 
         return soma;

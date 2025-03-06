@@ -47,6 +47,17 @@ public class Programa {
             worker.addContrato(contrato);
 
         }
+
+        System.out.println();
+        System.out.println("Informe o mes e o ano que deseja calcular(mmYYYY): ");
+        String monthAdYear = scanner.next();
+        int mes = Integer.parseInt(monthAdYear.substring(0,2));
+        int ano = Integer.parseInt(monthAdYear.substring(3));
+
+        System.out.println("Nome: "+  worker.getName());
+        System.out.println("Departamento: "+ worker.getDepartamento().getName());
+        System.out.println("Total ganho: "+ monthAdYear +": "+ String.format("%.2f",worker.income(ano, mes)));
+
         scanner.close();
     }
 }
