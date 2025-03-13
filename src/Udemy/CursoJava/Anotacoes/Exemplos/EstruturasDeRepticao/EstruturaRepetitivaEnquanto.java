@@ -1,4 +1,4 @@
-package Udemy.CursoJava.Anotacoes.Exemplos;
+package Udemy.CursoJava.Anotacoes.Exemplos.EstruturasDeRepticao;
 
 import java.util.Scanner;
 

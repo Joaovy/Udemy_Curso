@@ -1,6 +1,5 @@
-package Udemy.CursoJava.Anotacoes.Exemplos;
+package Udemy.CursoJava.Anotacoes.Exemplos.Exceptions;
 
-import java.sql.SQLOutput;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Udemy.CursoJava.Anotacoes.Exemplos;
+package Udemy.CursoJava.Anotacoes.Exemplos.Exceptions;
 
 import java.io.File;
 import java.io.IOException;
