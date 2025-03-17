@@ -1,5 +1,6 @@
 package Udemy.CursoJava.Udemy.Exercicios.Interfaces.ProcessContratc.Model.entities;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 public class Contract {
 
     private int number;
-    private Date date;
+    private LocalDate date;
     private double totalValue;
 
      private List<Installment> installments = new ArrayList<>();
@@ -16,7 +17,7 @@ public class Contract {
 
     }
 
-    public Contract(int number, Date date, double totalValue) {
+    public Contract(int number, LocalDate date, double totalValue) {
         this.number = number;
         this.date = date;
         this.totalValue = totalValue;
@@ -30,11 +31,11 @@ public class Contract {
         this.number = number;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
