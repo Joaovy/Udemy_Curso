@@ -1,9 +1,7 @@
-package Udemy.CursoJava.Anotacoes.Exemplos.Set;
+package Udemy.CursoJava.Anotacoes.Exemplos.Generics.Set;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class ProgramDemo1 {
 

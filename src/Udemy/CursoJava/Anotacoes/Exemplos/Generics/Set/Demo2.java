@@ -1,4 +1,4 @@
-package Udemy.CursoJava.Anotacoes.Exemplos.Set;
+package Udemy.CursoJava.Anotacoes.Exemplos.Generics.Set;
 
 import java.util.Arrays;
 import java.util.Set;
